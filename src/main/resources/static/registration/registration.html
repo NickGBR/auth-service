@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <!-- Подключение стилей Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Подключение пользовательских стилей -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 center-form">
+          <form>
+            <div class="form-group">
+              <label for="first-name-input">Имя:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-name-input"
+                placeholder="Имя"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name-input">Фамилия:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="last-name-input"
+                placeholder="Фамилия"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone-number-input">Номер телефона:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone-number-input"
+                placeholder="Номер телефона"
+                required
+                readonly
+              />
+            </div>
+            <div class="form-group">
+              <label for="password-input">Пароль:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-input"
+                placeholder="Пароль"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password-input-check">Повторите пароль:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-input-check"
+                placeholder="Повторите пароль"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirmation-code-input">Код подтверждения:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="confirmation-code-input"
+                placeholder="Код подтверждения"
+                required
+              />
+            </div>
+            <button type="button" class="btn btn-primary" id="request-code-btn">
+              Запросить код
+            </button>
+            <button type="button" class="btn btn-primary" id="registration-btn">Подтвердить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="registration.js"></script>
+  </body>
+</html>

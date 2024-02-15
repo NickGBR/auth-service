@@ -1,0 +1,12 @@
+jwt:
+  key: ${JWT_KEY}
+  access-token-expiration: 3600000
+
+logging:
+  level:
+    org.springframework.security.web.FilterChainProxy: TRACE
+    org.springframework.security.web.csrf.CsrfFilter: TRACE
+spring:
+  graphql:
+    graphiql:
+      enabled: true

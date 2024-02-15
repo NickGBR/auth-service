@@ -1,0 +1,9 @@
+type Query {
+    getUserByPhoneNumber(phoneNumber: String): User
+}
+
+type User {
+    name: String
+    surname: String
+    phoneNumber: Int
+}
