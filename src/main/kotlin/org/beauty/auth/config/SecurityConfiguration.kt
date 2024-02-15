@@ -17,7 +17,6 @@ class SecurityConfiguration(
     private val authenticationProvider: AuthenticationProvider
 ) {
     @Bean
-
     fun securityFilterChain(
         http: HttpSecurity,
         jwtAuthenticationFilter: JwtAuthenticationFilter
@@ -38,13 +37,6 @@ class SecurityConfiguration(
         .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter::class.java)
         .csrf { it.disable() }
         .build()
-
-
-    @Bean(name = ["getUserByPhoneNumberSecurity"])
-    fun hasUserId(authentication: Authentication?, userId: Long?): Boolean {
-        println(authentication);
-        return true;
-    }
 
     val unauthorizedUrls = arrayOf(
         "/api/user/exists/*", "/api/auth", "/error", "/favicon.ico", "/api/mock/code/**",

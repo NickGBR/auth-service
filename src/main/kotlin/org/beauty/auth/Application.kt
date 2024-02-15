@@ -1,7 +1,6 @@
 package org.beauty.auth
 
 import org.beauty.auth.config.JwtProperties
-import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication

@@ -8,7 +8,6 @@ import org.beauty.auth.service.ITokenService
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.stereotype.Service
 import java.util.*
-import javax.crypto.SecretKey
 
 @Service
 class TokenService(

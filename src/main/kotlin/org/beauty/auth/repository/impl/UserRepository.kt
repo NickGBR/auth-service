@@ -17,10 +17,10 @@ class UserRepository(
 
     override fun findUserByPhoneNumber(phoneNumber: String): UserEntity? {
         var userEntity: UserEntity? = null
-        val hqlRequest = "FROM UserEntity e WHERE e.phoneNumber = '$phoneNumber'";
+        val hqlRequest = "FROM UserEntity e WHERE e.phoneNumber = '$phoneNumber'"
         sessionFactory.inTransaction {
             userEntity = it.createQuery(hqlRequest, UserEntity::class.java).singleResultOrNull
         }
-        return userEntity;
+        return userEntity
     }
 }

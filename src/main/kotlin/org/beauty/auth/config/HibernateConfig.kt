@@ -7,7 +7,6 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean
 
 @Configuration
 class HibernateConfig {
-
     @Bean
     fun sessionFactory(): LocalSessionFactoryBean {
         val sessionFactory = LocalSessionFactoryBean()
